@@ -115,6 +115,13 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.status(200).json({ 
+    status: 'OK', 
+    message: 'Server is running' 
+  });
+});
+
 // Запуск сервера
 app.listen(PORT, () => {
   console.log(`
