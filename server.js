@@ -7,7 +7,7 @@ const app = express();
 
 // Настройка CORS для разрешения запросов с вашего React приложения
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5000'], // добавьте URL вашего фронтенда
+  origin: ['http://localhost:3000', 'http://localhost:5000', 'https://tabysty-urpaq.web.app'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type']
 }));
